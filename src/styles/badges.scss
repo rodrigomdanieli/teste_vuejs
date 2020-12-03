@@ -1,0 +1,43 @@
+$green:#70bd76;
+$yellow:#e0c943;
+$red:#eb4528;
+$blue:#68b3c8;
+$gray:rgb(117, 117, 117);
+
+#app{
+
+
+  .badge-green-color {
+    color: $green;
+  }
+  .badge-yellow-color {
+    color: $yellow;
+  }
+  .badge-red-color {
+    color: $red;
+  }
+  .badge-gray-color {
+    color: $gray;
+  }
+  .badge-blue-color {
+    color: $blue;
+  }
+
+  .badge-green-bg {
+    background: $green;
+  }
+  .badge-yellow-bg {
+    background: $yellow;
+  }
+  .badge-red-bg {
+    background: $red;
+  }
+  .badge-gray-bg {
+    background: $gray;
+  }
+  .badge-blue-bg {
+    background: $blue;
+  }
+
+
+}

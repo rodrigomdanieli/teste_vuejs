@@ -1,0 +1,27 @@
+#app{
+  //Tickets
+  .inprogress {
+    background: #ee930a;
+  }
+  .opened {
+    background: #4cb5cf;
+  }
+  .closed {
+    background: #4c55cf;
+  }
+
+  .closed_ws {
+    background: #c9531c;
+  }
+
+  //Maintenace
+  .forapprove {
+    background: #ee930a;
+  }
+  .current {
+    background: #0c9c43;
+  }
+  .finished {
+    background: #c0c5c7;
+  }
+}

@@ -1,0 +1,21 @@
+#app{
+  .profile-control{
+
+    min-height: 100%;
+
+    .nav-profile-control{
+      background: $menuBg;
+      min-height: 100vh;
+
+      color: $menuText;
+      h1, h2, h3, h4, h5, h6{
+        color: $menuText;
+      }
+
+    }
+    .app-profile-control{
+      min-height: 100vh;
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+#app .inprogress {
+  background: #ee930a;
+}
+#app .opened {
+  background: #4cb5cf;
+}
+#app .forapprove {
+  background: #ee930a;
+}
+#app .current {
+  background: #0c9c43;
+}
+#app .finished {
+  background: #c0c5c7;
+}

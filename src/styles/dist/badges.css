@@ -1,0 +1,30 @@
+#app .badge-green-color {
+  color: #7ac29a;
+}
+#app .badge-yellow-color {
+  color: #e0c943;
+}
+#app .badge-red-color {
+  color: #eb4528;
+}
+#app .badge-gray-color {
+  color: #757575;
+}
+#app .badge-blue-color {
+  color: #68b3c8;
+}
+#app .badge-green-bg {
+  background: #7ac29a;
+}
+#app .badge-yellow-bg {
+  background: #e0c943;
+}
+#app .badge-red-bg {
+  background: #eb4528;
+}
+#app .badge-gray-bg {
+  background: #757575;
+}
+#app .badge-blue-bg {
+  background: #68b3c8;
+}
