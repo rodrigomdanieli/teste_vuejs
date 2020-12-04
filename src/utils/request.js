@@ -18,11 +18,6 @@ service.interceptors.request.use(
   config => {
     token = config.baseURL + config.url;
 
-    if (token) {
-      let cancelToken = axios.CancelToken(e => e);
-      store.dispatch('request/validToken', { token, cancelToken })
-    }
-
     if (getToken()) {
       config.headers['DBToken'] = getToken()
     }

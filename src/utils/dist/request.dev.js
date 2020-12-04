@@ -29,17 +29,6 @@ service.interceptors.request.use(function (config) {
   // console.log(moment().format("H:m:s") + " => " + config.url)
   token = config.baseURL + config.url;
 
-  if (token) {
-    var cancelToken = _axios["default"].CancelToken(function (e) {
-      return e;
-    });
-
-    _store["default"].dispatch('request/validToken', {
-      token: token,
-      cancelToken: cancelToken
-    });
-  }
-
   if ((0, _auth.getToken)()) {
     config.headers['DBToken'] = (0, _auth.getToken)();
   }
