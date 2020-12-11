@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Admin DBSnoop!',
+  title: 'Testes',
 
   /**
    * @type {boolean} true | false

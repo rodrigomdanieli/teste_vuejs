@@ -1,4 +1,4 @@
-import { checkEmail } from "@/api/auth/main"
+
 /**
  * @param {string} path
  * @returns {Boolean}
@@ -17,15 +17,4 @@ export function validUsername(str) {
     return true
   }
     return false
-}
-
-export async function validDBEmail(email){
-  //return true;
-  let valid = await checkEmail({email: email})
-  if(valid.status == 'ok'){
-    if(valid.data == 'VALID_EMAIL'){
-      return true
-    }
-  }
-  return false;
 }

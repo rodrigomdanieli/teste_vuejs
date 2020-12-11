@@ -3,11 +3,6 @@ import Layout from '@/layout/home'
 export const staticRoutes = [
 
   {
-    path: '/login',
-    component: () => import('@/views/auth/login/index'),
-    hidden: true
-  },
-  {
     path: '/',
     component: Layout,
     name: 'Dashboard',

@@ -1,6 +1,5 @@
 <template>
   <div :class="{'has-logo':showLogo}">
-    <logo v-if="showLogo" :collapse="isCollapse" />
     <div class="groupbar-action">
       <font-awesome-icon @click="groupbar.opened=!groupbar.opened" :icon="!groupbar.opened?'chevron-circle-left':'chevron-circle-right' "/>
     </div>
@@ -23,12 +22,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Logo from './Logo'
 import SidebarItem from './SidebarItem'
 import variables from '@/styles/variables.scss'
 
 export default {
-  components: { SidebarItem, Logo },
+  components: { SidebarItem },
   computed: {
     ...mapGetters([
       'sidebar',

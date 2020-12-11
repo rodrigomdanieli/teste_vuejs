@@ -1,5 +1,4 @@
 import moment from 'moment-timezone'
-import store from '@/store'
 
 /**
  * Parse the time to string
@@ -163,25 +162,6 @@ export function getMomentTime(a, b) {
     return time.format(b)
   return a
 
-}
-
-export function formatTimeZone(a, b){
-
-  let time = moment(a);
-  if (time.isValid()){
-    let tz = store.getters.timezone
-    let reg = /-(\d\d):(\d\d)/
-    let reg2   = /\+(\d\d):(\d\d)/
-    let match = /(\d\d):\d\d/.exec(tz)
-    if(reg.test(tz)){
-      return time.subtract(match[1],'hours').format(b)
-    }else if(reg2.test(tz)){
-      return time.add(match[1],'hours').format(b)
-    }
-    return time.tz(tz).format(b)
-  }
-
-  return a
 }
 
 export function toUTC(a){

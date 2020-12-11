@@ -1,8 +1,4 @@
 import axios from 'axios'
-import { Message } from 'element-ui'
-import store from '@/store'
-import { getToken, removeToken } from '@/utils/auth'
-import moment from 'moment'
 import router from '@/router'
 
 let token;
@@ -16,10 +12,6 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
-    token = config.baseURL + config.url;
-    if (getToken()) {
-      config.headers['DBToken'] = getToken()
-    }
     return config
   },
   error => {
