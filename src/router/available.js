@@ -23,6 +23,21 @@ export const staticRoutes = [
     ]
   },
   {
+    path: '/badge',
+    component: Layout,
+    name: 'Dashboard',
+    redirect: '/badges',
+    meta: { title: 'Dash', icon: 'el-icon-s-home' },
+    children: [
+      {
+        path: '/badges',
+        component: () => import('@/views/dashboards/badges'),
+        name: 'Badges',
+        meta: { title: 'Badges_title' }
+      },
+    ]
+  },
+  {
     path: '/404',
     component: () => import('@/views/404'),
     hidden: true

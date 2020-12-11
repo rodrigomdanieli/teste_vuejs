@@ -20,7 +20,7 @@ const mutations = {
     Object.assign(state, getDefaultState())
   },
   SET_TOKEN: (state, token) => {
-    Cookie.set('dbsnoop_token',token)
+    Cookie.set('admin_backoffice',token)
     state.token = token
   },
   SET_NAME: (state, name) => {

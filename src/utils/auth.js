@@ -1,7 +1,7 @@
 import store from '@/store'
 import cookie from 'js-cookie'
 
-const TokenKey = 'dbsnoop_token'
+const TokenKey = 'admin_backoffice'
 
 export function getToken() {
   if(store)
