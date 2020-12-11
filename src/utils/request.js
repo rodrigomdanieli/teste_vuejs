@@ -17,7 +17,6 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     token = config.baseURL + config.url;
-
     if (getToken()) {
       config.headers['DBToken'] = getToken()
     }
